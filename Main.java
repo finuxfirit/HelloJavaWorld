@@ -30,6 +30,9 @@ public class Main
 		char myGPA = 'A';
 		boolean IsAFurry = true;
 		float scientificNum = 35e3f; // 35 to power of e indicating the power of 10
+		
+		// Let's create an array
+		int[] favoriteNumbers = {7,11,14,22,69,420,1111,1010,4545,252525};
 
 		// Let's try to change the realAge variable
 		//realAge = 999; // Keep this commented or there will be an error
@@ -52,7 +55,7 @@ public class Main
 		PrintLinebreak();		
 
 		// Print out a float
-		System.out.println("==== MATH THINGS ====)");
+		System.out.println("==== MATH THINGS ====");
 		System.out.println("This is how many digits of PI I know: " + PIALL);
 		System.out.println("(Printed as double - " + PI + ")");
 		System.out.println("I can even show you a scientific number. Right here -> " + scientificNum + "!");
@@ -63,14 +66,25 @@ public class Main
 		    count = 10;
 
 		// Print out a nice thing to say
-		System.out.println("I can count from " + start + " to " + count + ":");
+		System.out.println("\nI can count from " + start + " to " + count + ":");
 
 		// Do the loop
 		while (start <= count)
 		{
 			// This is terinary operator ; it's nice :)
-			System.out.print((start == 10) ? start + "\n" : start + ", ");
+			System.out.print((start == 10) ? start + "\n\n" : start + ", ");
 			start++;
+		}
+		// ----------------------------------------------------------------------
+
+		// -- Let's show our array ----------------------------------------------
+		// Show a nice message
+		System.out.println("My favorite numbers are: ");
+
+		// Do the loop
+		for (int i = 0; i < favoriteNumbers.length; i++)
+		{
+			System.out.print((i == favoriteNumbers.length - 1) ? favoriteNumbers[i] + "\n\n" : favoriteNumbers[i] + ", ");
 		}
 		// ----------------------------------------------------------------------
 
