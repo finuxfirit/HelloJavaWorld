@@ -17,6 +17,9 @@ public class Main
 		writing // on every starting line		 
 		*/
 		
+		// Call a method
+		PrintLinebreak();
+		
 		// Let's create some variables
 		String name = "Nash",
 		       linebreak = "\n";
@@ -53,10 +56,32 @@ public class Main
 		System.out.println("This is how many digits of PI I know: " + PIALL);
 		System.out.println("(Printed as double - " + PI + ")");
 		System.out.println("I can even show you a scientific number. Right here -> " + scientificNum + "!");
-		System.out.print(linebreak);
+				
+		// -- Let's do a while loop ------------------------------------------
+		// Define the variables
+		int start = 1,
+		    count = 10;
+
+		// Print out a nice thing to say
+		System.out.println("I can count from " + start + " to " + count + ":");
+
+		// Do the loop
+		while (start <= count)
+		{
+			// This is terinary operator ; it's nice :)
+			System.out.print((start == 10) ? start + "\n" : start + ", ");
+			start++;
+		}
+		// ----------------------------------------------------------------------
+
+		// Call a method
+		PrintLinebreak();
 
 		// Print a char
 		System.out.println("==== SCHOOL INFO ====");
 		System.out.println("My GPA is an: " + myGPA);
+
+		// Call a method
+		PrintLinebreak();
 	}
 }
